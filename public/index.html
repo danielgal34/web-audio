@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Device Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: 300px;
+            margin: auto;
+        }
+        select, button, audio {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            border: none;
+        }
+        button:hover {
+            background-color: #0056b3;
+            cursor: pointer;
+        }
+        .label {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="label">Select Microphone:</div>
+        <select id="microphoneList"></select>
+        <div class="label">Select Speaker:</div>
+        <select id="speakerList"></select>
+        <button id="startButton">Start Capture</button>
+        <audio id="audioElement" controls></audio>
+    </div>
+    <script src="audio.js"></script>
+</body>
+</html>
